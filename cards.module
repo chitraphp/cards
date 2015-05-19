@@ -1,0 +1,15 @@
+<?php
+    function cards_menu() {
+        $items = array();
+        $items['cards'] = array(
+            'title' => 'Friendo',
+            'page callback' => 'do_card',
+            'access callback' => TRUE,
+            'type' => MENU_NORMAL_ITEM,
+        );
+        return $items;
+    }
+
+    function do_card() {
+        return '<p>hi</p>';
+    }
